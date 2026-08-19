@@ -305,6 +305,39 @@
   .trust-grid > * { flex: 1 1 100%; }
   @media (min-width: 760px) { .trust-grid > * { flex: 1 1 calc(50% - 8px); } }
 
+  .testimonial-card {
+    margin-top: 40px;
+    background: var(--teal-deep);
+    border-left: 3px solid var(--brass);
+    border-radius: 3px;
+    padding: 40px 44px;
+    position: relative;
+    max-width: 780px;
+  }
+  .testimonial-mark {
+    font-family: var(--font-display);
+    font-size: 64px;
+    line-height: 1;
+    color: var(--brass);
+    opacity: 0.6;
+    margin-bottom: -10px;
+  }
+  .testimonial-quote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--cream);
+  }
+  .testimonial-attribution {
+    margin-top: 20px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--brass-light);
+    text-transform: uppercase;
+  }
+
   /* FAQ */
   .faq-item { border-bottom: 1px solid var(--silver-line); }
   .faq-item summary {
@@ -741,11 +774,10 @@
       <h2>Built to make SME financial management more practical.</h2>
       <p class="lead" style="margin-top:14px;">Business owners don't always need more financial jargon. They need practical tools that help them understand their numbers, identify gaps, and take the next step.</p>
     </div>
-    <div class="trust-grid">
-      <div class="placeholder-box">[INSERT CUSTOMER TESTIMONIAL]</div>
-      <div class="placeholder-box">[INSERT CREDENTIAL / EXPERTISE]</div>
-      <div class="placeholder-box">[INSERT PARTNER LOGOS]</div>
-      <div class="placeholder-box">[INSERT TRUST BADGES]</div>
+    <div class="testimonial-card">
+      <div class="testimonial-mark">"</div>
+      <p class="testimonial-quote">Partnering with Finovate Consulting has been one of the most important decisions we made at Ozykay Investment Ltd and a game-changing factor in our evolution as an SME. They helped us improve our financial tracking and reporting efficiency by 60%, grew our cash flow and enabled us gain invaluable insights on performance. Their professionalism, attention to detail, and strategic advisory have been invaluable. Finovate Consulting is a beneficial partner in our growth journey!</p>
+      <p class="testimonial-attribution">— Ozykay Investment Ltd</p>
     </div>
   </div>
 </section>
@@ -827,7 +859,7 @@
     </details>
     <details class="faq-item">
       <summary>What should I do after completing the templates?</summary>
-      <p>Use what you discover to prioritize your next step — and if a result reveals a gap you'd like help closing, [INSERT CLARITY CALL / CONSULTATION BOOKING DETAILS].</p>
+      <p>Use what you discover to prioritize your next step — and if a result reveals a gap you'd like help closing, <a href="https://calendly.com/finovateconsults/30min" style="color:var(--teal);">book a free 20-minute Clarity Call</a> and we'll walk through it together.</p>
     </details>
   </div>
 </section>
